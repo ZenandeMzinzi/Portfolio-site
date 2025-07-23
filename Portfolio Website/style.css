@@ -56,6 +56,25 @@ body{
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
+@media (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg-color);
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    display: none;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .navbar a {
+    margin: 0.5rem 0;
+  }
+}
 .navbar a:hover,
 .navbar a.active{
     color: var(--main-color);
@@ -64,7 +83,7 @@ body{
 #menu-icon{
     font-size: 3.6rem;
     color: var(--main-color);
-    display: none;
+    display: flex;
 }
 
 section{
@@ -660,7 +679,8 @@ span{
     margin-bottom: 15px;
   }
 }
-.navbar {
+@media (max-width: 768px) {
+  .navbar {
     position: absolute;
     top: 100%;
     right: 0;
@@ -670,13 +690,15 @@ span{
     padding: 1rem;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     display: none;
+    z-index: 100;
   }
-
-.navbar.active{
-  display: flex;
-}
-.navbar a{
+  .navbar.active {
+    display: flex;
+  }
+  .navbar a {
     margin: 0.5rem 0;
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 769px) {
