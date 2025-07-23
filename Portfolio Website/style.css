@@ -309,6 +309,8 @@ span{
    box-shadow: 0 0 10px var(--main-color);
    cursor: pointer;
    transition: 0.3s ease-in-out;
+   min-width: 220px;
+   min-height: 120px;
 }
 .timeline-content:hover{
     transform: scale(1.05);
@@ -636,13 +638,28 @@ span{
   display: flex;
   gap: 1.5rem;
 }
-@media (max-width: 768px) {
-  #menu-icon {
-    display: block;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--main-color);
+@media (max-width: 600px) {
+  .timeline-content {
+    padding: 20px 10px;
+    border-radius: 2rem;
   }
+  .timeline-content h3 {
+    font-size: 1.5rem;
+  }
+  .timeline-content p {
+    font-size: 1.2rem;
+  }
+  .timeline-items {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .timeline-content {
+    min-width: unset;
+    min-height: unset;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 .navbar {
     position: absolute;
     top: 100%;
@@ -661,7 +678,7 @@ span{
 .navbar a{
     margin: 0.5rem 0;
 }
-}
+
 @media (min-width: 769px) {
   #menu-icon {
     display: none;
@@ -680,4 +697,3 @@ img {
   word-wrap: break-word;
   max-width: 100%;
 }
-
