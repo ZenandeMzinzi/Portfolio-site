@@ -36,13 +36,13 @@ body::before {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+        padding: 50px 70px;
     padding: 4rem 12% 4rem;
     background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+        min-width: 280px;
+        min-height: 180px;
     z-index: 5;
 }
 .logo{
@@ -51,13 +51,13 @@ body::before {
     font-weight: 800;
     cursor: pointer;
     transition: 0.3s ease;
-}
+         padding: 50px 70px;
 .logo:hover{
     transform: scale(1.1);
 }
 .logo span{
-    text-shadow: 0 0 25px var(--main-color);
-}
+         min-width: 280px;
+         min-height: 180px;
 .navbar a{
     font-size: 1.8rem;
     color: var(--text-color);
