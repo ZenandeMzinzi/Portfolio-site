@@ -42,6 +42,18 @@ body::before {
     z-index: 0;
     pointer-events: none;
 }
+
+@media (max-width: 600px) {
+    body::before {
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.18;
+        filter: blur(3px);
+    }
+}
 .header{
     position: fixed;
     top: 0;
@@ -753,4 +765,3 @@ img {
   word-wrap: break-word;
   max-width: 100%;
 }
-
