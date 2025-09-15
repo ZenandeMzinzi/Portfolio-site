@@ -255,18 +255,22 @@ span{
 }
 @keyframes words{
     0%,
-    20%{
+    16%{
+        content: "IT Support";
+    }
+    17%,
+    32%{
         content: "Frontend Designer";
     }
-    21%,
-    40%{
+    33%,
+    48%{
         content: "Web Designer";
     }
-    41%,
-    60%{
+    49%,
+    64%{
         content: "UI/UX Designer";
     }
-    61%,
+    65%,
     80%{
         content: "Software Tester";
     }
@@ -749,3 +753,4 @@ img {
   word-wrap: break-word;
   max-width: 100%;
 }
+
