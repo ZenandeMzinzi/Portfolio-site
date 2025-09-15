@@ -328,19 +328,19 @@ span{
     color: white;
     margin: 6px 0 15px;
 }
-.timeline-content{
-    background-color: var(--bg-color);
-    border: 3px solid var(--main-color);
-    padding: 50px 80px;
-    border-radius: 4rem;
-    box-shadow: 0 0 10px var(--main-color);
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    min-width: 320px;
-    min-height: 220px;
-}
-.timeline-content:hover{
-    transform: scale(1.05);
+    .timeline-content h3 {
+        font-size: 2.2rem;
+    }
+    .timeline-content p {
+        font-size: 1.7rem;
+    }
+    .footer ul {
+        font-size: 1.7rem;
+    }
+    .footer .copyright {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
     box-shadow: 0 0 25px var(--main-color);
 }
 .timeline-content h3{
@@ -727,6 +727,7 @@ img {
   word-wrap: break-word;
   max-width: 100%;
 }
+
 
 
 
