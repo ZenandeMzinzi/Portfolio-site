@@ -93,8 +93,9 @@ section{
 .home{
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 15rem;
+    justify-content: space-between;
+    gap: 8rem;
+    flex-direction: row;
 }
 .home-content{
     display: flex;
@@ -121,10 +122,17 @@ span{
     margin-top: 1.5rem;
     line-height: 1;
 }
+.home-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
 .home-img img{
     position: relative;
     top: 3rem;
-    width: 12rem;
+    width: 28rem;
+    max-width: 100%;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
