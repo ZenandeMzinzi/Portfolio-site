@@ -331,11 +331,13 @@ span{
 .timeline-content{
     background-color: var(--bg-color);
     border: 3px solid var(--main-color);
-    padding: 20px 10px;
-    border-radius: 2rem;
+    padding: 50px 80px;
+    border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    min-width: 320px;
+    min-height: 220px;
 }
 .timeline-content:hover{
     transform: scale(1.05);
@@ -380,8 +382,8 @@ span{
 }
 .projects-box{
     background-color: var(--main-color);
-    height: 300px;
-    border-radius: 1rem;
+    height: 500px;
+    border-radius: 2.5rem;
     border: 5px solid transparent;
     cursor: pointer;
     transition: 0.4s ease-in-out;
@@ -396,10 +398,10 @@ span{
     display: flex;
     flex-direction: column;
     text-align: left;
-    max-height: 150px;
+    max-height: 300px;
     justify-content: left;
     align-items: baseline;
-    padding: 2rem 2rem;
+    padding: 7rem 7rem;
 }
 .projects-info h4{
     font-size: 3rem;
@@ -467,7 +469,7 @@ span{
 .certificates .timeline-content {
     background-color: var(--bg-color);
     border: 3px solid var(--main-color);
-    padding: 30px 50px;
+    padding: 50px 80px;
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
@@ -725,5 +727,6 @@ img {
   word-wrap: break-word;
   max-width: 100%;
 }
+
 
 
