@@ -1,4 +1,4 @@
-*{
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -268,7 +268,7 @@ span{
 @keyframes words{
     0%,
     16%{
-        content: "IT Support";
+        content: "IT Support Specialist";
     }
     17%,
     32%{
@@ -280,7 +280,7 @@ span{
     }
     49%,
     64%{
-        content: "UI/UX Designer";
+        content: "UI Designer";
     }
     65%,
     80%{
